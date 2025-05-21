@@ -1,0 +1,6 @@
+{
+  "url": "http://cash-girh-0:8080/dlportal/servlet/hlogin",
+  "title": "Portal Cash-GIRH",
+  "icon_url": "https://github.com/dcerizola/kiosko/blob/main/icon.png",
+  "open_as_window": true
+}
