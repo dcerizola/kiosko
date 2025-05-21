@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <body style="margin:0; overflow:hidden;">
+    <webview id="webview" src=http://cash-girh-0:8080/dlportal/servlet/hlogin style="width:100%; height:100%;"></webview>
+
+    <script>
+      const webview = document.getElementById('webview');
+      let lastActivity = Date.now();
+      let lastReload = Date.now();
+
+      ['mousemove', 'keydown', 'click'].forEach(evt =>
+        document.addEventListener(evt, () => lastActivity = Date.now())
+      );
+
+      setInterval(() => {
+        const now = Date.now();
+        const inactiveTime = now - lastActivity;
+        const reloadTime = now - lastReload;
+
+        if (inactiveTime > 1 * 60 * 1000 && reloadTime > 5 * 60 * 1000) {
+          webview.clearData({since: 0}, {cookies: true}, () => {
+            webview.reload();
+            console.log("Página recargada y cookies borradas por inactividad.");
+            lastReload = Date.now();
+          });
+        }
+      }, 30000);
+    </script>
+  </body>
+</html>
