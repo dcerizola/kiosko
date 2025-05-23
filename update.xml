@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gupdate xmlns="http://www.google.com/update2/response" protocol="2.0">
   <app appid="nokiahmolmgcilfdfnidgbgbefgglfie">
-    <updatecheck codebase="https://github.com/dcerizola/kiosko/blob/373cb29a71063f9e41c1074654eb432f7782dd9a/kiosk.crx" version="1.0" />
+    <updatecheck codebase="https://dcerizola.github.io/kiosko/kiosk.crx" version="1.0" />
   </app>
 </gupdate>
