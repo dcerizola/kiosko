@@ -7,7 +7,7 @@
       "scripts": ["background.js"]
     }
   },
-  "kiosk_enabled": true,
+  "kiosk_enabled": false,
   "permissions": [
     "power",
     "system.display"
