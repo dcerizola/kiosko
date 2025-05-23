@@ -11,5 +11,6 @@
   "permissions": [
     "power",
     "system.display"
-  ]
+  ],
+  "content_security_policy": "default-src 'self'; script-src 'self'; object-src 'self'; frame-src 'self' http://cash-girh-0:8080/"
 }
